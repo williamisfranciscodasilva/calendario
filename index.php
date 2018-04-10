@@ -2,5 +2,5 @@
 <?php
     include 'calendario.php';
     echo '<pre>';
-    print_r(diasMeses());
+    montaCalendario();
 ?>
