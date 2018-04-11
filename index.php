@@ -1,3 +1,7 @@
+<?php
+    include 'calendario.php';
+    /*echo '<pre>';*/
+?>
 <!DOCTYPE HTML>
 <html lang="pt-BR">
     <head>
@@ -7,11 +11,10 @@
     </head>
 
     <body>
-    <?php
-    include 'calendario.php';
-    /*echo '<pre>';*/
-    montaCalendario();
-    ?>
+        <div class="calendario">
+            <?php montaCalendario();?>
+        </div>
+    
     <script type="text/javascript" src="js/jquery.js"></script>
     </body>
 </html>
