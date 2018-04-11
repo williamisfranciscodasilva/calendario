@@ -55,6 +55,7 @@
                 $arrayRetorno[$i][$n] = $weekMonth;
             }
         }
+        echo '<a href="#" id="volta">&laquo;</a><a href="#" id="vai">&raquo;</a>';
         echo '<table border="0" width="100%">';
         foreach($arrayMes as $num => $mes){
             echo '<tbody id="mes_'.$num.'" class="mes">';
@@ -62,11 +63,26 @@
             foreach($diasSemana as $i => $day){
                 echo '<td>'.$day.'</td>';
             }
-            echo '</tr';
-            echo '</tbody>';
+            echo '</tr><tr>';
+            $y = 0;
+            foreach($arrayRetorno[$num] as $numero => $dia){
+                $y++;
+                if($numero == 1){
+                    $qtd = array_search($dia, $daysWeek);
+                    for($i=1; $i<=$qtd; $i++){ 
+                       echo '<td></td>';
+                       $y+=1;
+                    }
+                }
+                echo '<td>'.$numero.'</td>';
+                if($y == 7){
+                    $y=0;
+                    echo '</tr><tr>';
+                }
+            }
+            echo '</tr></tbody>';
         }
         echo '</table>';
-
         /*print_r($arrayRetorno);*/
     }
 ?>
