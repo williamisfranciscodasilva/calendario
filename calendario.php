@@ -55,7 +55,18 @@
                 $arrayRetorno[$i][$n] = $weekMonth;
             }
         }
+        echo '<table border="0" width="100%">';
+        foreach($arrayMes as $num => $mes){
+            echo '<tbody id="mes_'.$num.'" class="mes">';
+            echo '<tr><td colpan="7">'.$mes.'</td></tr><tr>';
+            foreach($diasSemana as $i => $day){
+                echo '<td>'.$day.'</td>';
+            }
+            echo '</tr';
+            echo '</tbody>';
+        }
+        echo '</table>';
 
-        print_r($arrayRetorno);
+        /*print_r($arrayRetorno);*/
     }
 ?>
