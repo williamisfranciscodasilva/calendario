@@ -20,13 +20,13 @@
             'Sat'
         );
         $diasSemana = array(
-            'Domingo',
-            'Segunda',
-            'Terça',
-            'Quarta',
-            'Quinta',
-            'Sexta',
-            'Sábado'
+            'Dom',
+            'Seg',
+            'Ter',
+            'Qua',
+            'Qui',
+            'Sex',
+            'Sab'
         );
         $arrayMes = array(
             1 => 'Janeiro',
