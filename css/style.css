@@ -4,5 +4,21 @@ body{
 }
 .calendario{
     margin: 40px;
-    width: 300px;
+    width: 350px;
+    background: white;
+    font-size: 14px;
+    text-align: center;
+}
+.calendario .mes{
+    display: none;
+}
+.calendario td{
+    padding: 5px;
+    background: #f0f0f0;
+}
+.calendario .mes_title{
+    font-size: 15px;
+}
+.calendario .dias_title{
+    font-size: 13px;
 }
